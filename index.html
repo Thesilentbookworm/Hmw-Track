@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyB2DpqZFkh4HWEGynfph6ucClfpjrS5Szo",
+      authDomain: "hw-track.firebaseapp.com",
+      databaseURL: "https://hw-track.firebaseio.com",
+      projectId: "hw-track",
+      storageBucket: "hw-track.appspot.com",
+      messagingSenderId: "785576075962"
+    };
+    firebase.initializeApp(config);
+  </script>
+
+</head>
+
+<body>
+
+
+  <!--  <div class="nav-wrapper">-->
+  <!--    <a href="index.html" class="brand-logo">Homework Trackster</a>-->
+  <!--    <ul id="nav-mobile" class="right hide-on-med-and-down">-->
+  <!--      <li><a href="hw-pg.html">Homework Page</a></li>-->
+  <!--      <li><a href="sign-in.html">Comp</a></li>-->
+  <!--<li><a href="sign-in.html">Sign-In</a></li>-->
+
+  <!--      <ul id="dropdown2" class="dropdown-content">-->
+  <!--  <li><a href="sign-in.html"> Sign In </a><span class="badge"> </span></a></li>-->
+  <!--  <li><a href="#!"><span class="new badge"> </span></a></li>-->
+  <!--  <li><a href="index.html" <button onclick= "signUserOut()">  </button> >Sign Out</a></li>-->
+  <!--</ul>-->
+  <!--<a class="btn dropdown-trigger" href="#!" data-target="dropdown2">  <i class="material-icons right">arrow_drop_down</i></a>-->
+
+  <!--    </ul>-->
+  <!--  </div>-->
+
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="sign-in.html"> Sign in </a></li>
+    <li><a href="hw-pg.html">Assignments</a></li>
+    <li class="divider"></li>
+    <li> <a onclick="signUserOut()"> Sign Out </a> </li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="index.html" class="brand-logo"> Trackster </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="hw-pg.html"> Assignments </a></li>
+        <li> <img id="avatar" src="" /> </li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">  <i class="material-icons right">menu</i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="top-half"></div>
+
+    <div id="bottom-half" class="z-depth-5">
+      <div class="navbar">
+
+
+        <h2 class="center"> Trackster </h2>
+        <hr />
+
+
+        <div class="intro">
+          <p>
+            Trackster is the place you go to whenever you're in need being on track.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <footer class="page-footer">
+    <div class="container">
+
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019 Copyright Text
+
+      </div>
+
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

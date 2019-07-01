@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Roboto+Condensed');
+
+
+/**************
+ *** NAVBAR ***
+ **************/
+.nav {
+    font-family: Lora;
+}
+
+.nav-wrapper {
+      background: #f8bbd0  ;
+  }
+  
+/**************
+ ***  MAIN  ***
+ **************/
+
+main.main {
+    background: rgba(220,220,230, 0.7);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width:100%;
+    min-height: calc(100vh - 75px - 50px);
+    font-family: Lora;
+    
+}
+
+.left-half, .right-half {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    padding: 15%;
+}
+ 
+ .left-half .title {
+     margin: 2% 0;
+     font-size: 1.5rem;
+ }
+ 
+ .left-half .h {
+     font-size: 1.5rem;
+ }
+ .right-half .h {
+     font-size:1.5rem;
+ }
+ 
+ .right-half form {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ 
+ .right-half form .half-input {
+     grid-column: span 1;
+     margin: 1% 0;
+     min-height: 30px;
+     font-size: 15px;
+ }
+ 
+ .right-half form .full-input {
+     grid-column: span 2;
+     margin: 1% 0;
+     min-height: 30px;
+     font-size: 15px;
+ }
+ 
+ .right-half form button {
+     font-size: 16px;
+     padding: 8px 12px;
+     background: rgb(40,50,60);
+     color: white;
+     border-radius: 6px;
+     font-family: cormorant infant;
+ }
+ 
+ hr {
+     border: solid 0.5px black;
+     width:100%;
+ }
+ 
+/**************
+ *** FOOTER ***
+ **************/
+
+footer.page-footer {
+    font-family: Lora;
+    background: #f8bbd0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:foucs {
+     outline: none !important;
+ }
+ 
+ #avatar {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+ }
+ 
+  .left-half {
+    background-image: url("https://images.unsplash.com/photo-1471107191679-f26174d2d41e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=666&q=80");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*height: 100vh*/
+    min-height: 500px;
+    box-shadow: 1px 2px 0px 0px rgba(0,0,0,0.3);
+    opacity: 0.7;
+    /*background: rgba(255, 0,255, 0.1);*/
+   
+}

@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>HomeWork Trackster</title>
+            <link rel= "stylesheet" href= "sign-in.css"/>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyB2DpqZFkh4HWEGynfph6ucClfpjrS5Szo",
+    authDomain: "hw-track.firebaseapp.com",
+    databaseURL: "https://hw-track.firebaseio.com",
+    projectId: "hw-track",
+    storageBucket: "hw-track.appspot.com",
+    messagingSenderId: "785576075962"
+  };
+  firebase.initializeApp(config);
+</script>
+
+    </head>
+    <body>
+        
+      
+   <ul id="dropdown1" class="dropdown-content">
+  <li><a href="sign-in.html"> Sign in </a></li>
+  <li><a href="#!">two</a></li>
+  <li class="divider"></li>
+  <li> <a onclick= "signUserOut()"> Sign Out </a> </li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="index.html" class="brand-logo"> Trackster </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="hw-pg.html"> Assignments </a></li>
+      <li><a href="badges.html">Components</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">  <i class="material-icons right">menu</i></a></li>
+    </ul>
+  </div>
+</nav>
+        
+
+        
+        <main class="main">
+            <div class="left-half">
+                <!--<h2 class="title">Connect with your friends and the world around you</h2>-->
+                <!--<h3 class="h"><i class="material-icons">share</i>-->
+                <!--    Share what's new in your life on Connnectiiion-->
+                <!--</h3>-->
+                <!--<h3 class = "h"><i class="material-icons">linked_camera</i> -->
+                <!--    View each other's daily life and experiences-->
+                <!--</h3>-->
+                <!--<h3 class= "h"><i class="material-icons">chat</i>-->
+                <!--    Enjoy your daily laugh, chisme, and drama with each other!!-->
+                <!--</h3>-->
+            </div>
+            <div class="right-half">
+                <h1 class= "h">Sign Up</h1>
+                <h4 class= "h">It's free and always will be!</h4>
+                <form>
+                    <input 
+                        class= "half-input"
+                        placeholder= "First Name"
+                        name= "first_name"
+                    />
+                    <input 
+                        class= "half-input"
+                        placeholder= "Last Name"
+                        name= "last_name"
+                    />
+                    <input 
+                        class= "full-input"
+                        placeholder= "Mobile Number or Email"
+                        name= "number_or_email"
+                    />
+                    <input 
+                        class= "full-input"
+                        placeholder= "New Password"
+                        name= "new_password"
+                        type= "password"
+                    />
+                    <!--<button type= "Submit"> Sign Up </button>-->
+                    
+                    <button class="btn waves-effect waves-light" id= "butn" type="submit" name="action">Sign Up
+    <i class="material-icons right">send</i>
+  </button>
+                    
+                </form>
+                <hr />
+                <p>Or Sign up with Google &nbsp;</p>
+                
+                <a id="so" class="waves-effect waves-light btn"> <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/600px-Google_%22G%22_Logo.svg.png"> </a>
+                
+                <p>Already have an account? <a href = "sign-in.html"> Log in</a> </p>
+            </div>
+        </main>
+        
+                 <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+        </footer>
+        <script src= "sign-in.js"></script>
+    </body>
+</html>

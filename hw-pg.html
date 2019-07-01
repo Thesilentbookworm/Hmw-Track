@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="hw-pg.css" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB2DpqZFkh4HWEGynfph6ucClfpjrS5Szo",
+            authDomain: "hw-track.firebaseapp.com",
+            databaseURL: "https://hw-track.firebaseio.com",
+            projectId: "hw-track",
+            storageBucket: "hw-track.appspot.com",
+            messagingSenderId: "785576075962"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+</head>
+
+<body>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="sign-in.html"> Sign in </a></li>
+        <li><a href="hw-pg.html">Assignments</a></li>
+        <li class="divider"></li>
+        <li> <a onclick="signUserOut()"> Sign Out </a> </li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"> Trackster </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="hw-pg.html"> Assignments </a></li>
+                <li> <img id="avatar" src="" /> </li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">  <i class="material-icons right">menu</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div id="main" class="z-depth-5">
+
+
+        <div class="right-half">
+            <div class="navbar">
+
+
+                <h2 class="title"> Homework Tracker </h2>
+                <hr />
+
+
+            </div>
+
+            <div class="sub1">
+
+                <div class="section">
+                    <a id="scale-demo" href="#!" class="btn-floating btn-large scale-transition">
+                          <i onclick={addHomework()} class="material-icons">add</i>
+                    </a>
+
+                    <div class="col">
+
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="hw_name" type="text" class="validate" name="hw_name">
+                                <label for="hw_name">Assignment Name</label>
+
+                            </div>
+
+                            <div class="input-field col s6">
+                                <input class="datepicker" id="due_date" type="text" class="validate" name="due_date">
+                                <label for="due_date">Due Date</label>
+                            </div>
+
+                        </div>
+
+                        <div class="left-half">
+                            <p class="p"> Activities </p>
+                            <ul id="hw_activities">
+
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright Text
+
+            </div>
+    </footer>
+
+
+    <script src="hw-pg.js"></script>
+</body>
+
+</html>
